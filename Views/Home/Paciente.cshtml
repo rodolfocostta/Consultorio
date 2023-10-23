@@ -1,6 +1,29 @@
 ﻿@{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = "Paciente";
 }
 <h1>@ViewData["Title"]</h1>
+<style>
+    body {
+        background-color: lightblue;
+    }
 
-<p>Use this page to detail your site's privacy policy.</p>
+    h1 {
+        color: white;
+        text-align: center;
+    }
+
+    p {
+        font-family: verdana;
+    }
+</style>
+<form action="/action_page.php">
+ <label for="fname">Nome:</label><br>
+ <input type="text" id="nome" name="fname" value=""><br>
+ <label for="lname">Sobrenome:</label><br>
+ <input type="text" id="sobrenome" name="lname" value=""><br><br>
+    <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30">Descrever a situação do Paciente e se tem alergia a algum remedio.</textarea>
+        <br><br>
+    </form>
+ <input type="submit" value="Cadastrar">
+</form>
